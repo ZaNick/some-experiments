@@ -1,0 +1,10 @@
+<button mat-raised-button>Click me!</button>
+<mat-form-field>
+  <mat-select placeholder="Favorite food">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{ food.viewValue }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<app-booking-stepper></app-booking-stepper>
