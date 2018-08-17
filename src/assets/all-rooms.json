@@ -1,0 +1,206 @@
+[{
+    "id": 0,
+    "room_name": "veniam labore pariatur",
+    "room_description": "Sit anim voluptate duis in exercitation sint Lorem sint reprehenderit ipsum.",
+    "price": 5000,
+    "images": [{
+        "id": 0,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 1,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 2,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 3,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 4,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 5,
+        "uri": "/img/room1/img1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "room_name": "nostrud amet nisi",
+    "room_description": "Excepteur elit pariatur sint ex dolore pariatur fugiat Lorem ad.",
+    "price": 3000,
+    "images": [{
+        "id": 0,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 1,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 2,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 3,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 4,
+        "uri": "/img/room1/img1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "room_name": "cupidatat duis commodo",
+    "room_description": "Sunt ea est do ea consequat qui incididunt.",
+    "price": 10000,
+    "images": [{
+        "id": 0,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 1,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 2,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 3,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 4,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 5,
+        "uri": "/img/room1/img1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "room_name": "voluptate aliquip magna",
+    "room_description": "Eiusmod et elit reprehenderit incididunt quis eu mollit enim eu ut ut aliqua excepteur nisi.",
+    "price": 5000,
+    "images": [{
+        "id": 0,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 1,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 2,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 3,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 4,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 5,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 6,
+        "uri": "/img/room1/img1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "room_name": "consequat cupidatat mollit",
+    "room_description": "Incididunt minim anim culpa aliquip adipisicing aliqua do nulla non esse.",
+    "price": 8000,
+    "images": [{
+        "id": 0,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 1,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 2,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 3,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 4,
+        "uri": "/img/room1/img1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "room_name": "sit aute sit",
+    "room_description": "Aliquip aliquip eiusmod excepteur cillum ut voluptate.",
+    "price": 2000,
+    "images": [{
+        "id": 0,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 1,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 2,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 3,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 4,
+        "uri": "/img/room1/img1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "room_name": "ad ipsum minim",
+    "room_description": "Voluptate cillum tempor eiusmod magna cupidatat mollit excepteur sint culpa ea nisi adipisicing.",
+    "price": 10000,
+    "images": [{
+        "id": 0,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 1,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 2,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 3,
+        "uri": "/img/room1/img1.jpg"
+      },
+      {
+        "id": 4,
+        "uri": "/img/room1/img1.jpg"
+      }
+    ]
+  }
+]

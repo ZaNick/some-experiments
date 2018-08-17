@@ -1,0 +1,66 @@
+:host {
+  display: block;
+}
+
+ngb-datepicker {
+  outline: none;
+}
+
+.custom-day {
+  text-align: center;
+  padding: 0.185rem 0.25rem;
+  display: inline-flex;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-day.focused {
+  background-color: #e6e6e6;
+}
+
+.custom-day.range,
+.custom-day:hover {
+  background-color: rgb(103, 58, 183);
+  color: white;
+  position: relative;
+}
+
+.custom-day.last,
+.custom-day.first {
+  background-color: rgb(103, 58, 183);
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid #b29cdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.1s;
+}
+
+.custom-day.last:after,
+.custom-day.first:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background-color: rgba(103, 58, 183, 0.5);
+}
+
+.custom-day.first:after {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.custom-day.last:after {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.custom-day.faded {
+  background-color: rgba(103, 58, 183, 0.5);
+}

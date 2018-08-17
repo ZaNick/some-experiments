@@ -7,6 +7,8 @@ import { BookingStepperComponent } from './booking-stepper/booking-stepper.compo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { DateRangeComponent } from './date-range/date-range.component';
+import { RoomPickerComponent } from './room-picker/room-picker.component';
 
 @NgModule({
   imports: [
@@ -17,6 +19,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     NgbModule,
   ],
-  declarations: [HomeComponent, BookingStepperComponent]
+  declarations: [HomeComponent, BookingStepperComponent, DateRangeComponent, RoomPickerComponent]
 })
 export class HomeModule { }

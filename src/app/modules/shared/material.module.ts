@@ -101,7 +101,8 @@ import {
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-  ]
+  ],
+  declarations: []
 })
 export class MaterialModule {
 }

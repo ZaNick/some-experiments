@@ -1,45 +1,22 @@
-
-<ngb-datepicker #dp (select)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t">
-</ngb-datepicker>
-
-<ng-template #t let-date="date" let-focused="focused">
-  <span class="custom-day"
-        [class.focused]="focused"
-        [class.range]="isRange(date)"
-        [class.faded]="isHovered(date) || isInside(date)"
-        (mouseenter)="hoveredDate = date"
-        (mouseleave)="hoveredDate = null">
-    {{ date.day }}
-  </span>
-</ng-template>
-
-<hr>
-
-<pre>From: {{ fromDate | json }} </pre>
-<pre>To: {{ toDate | json }} </pre>
-
-
-
-
-
-<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
-  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
-</button>
 <mat-vertical-stepper [linear]="isLinear" #stepper>
-  <mat-step [stepControl]="firstFormGroup">
-    <form [formGroup]="firstFormGroup">
+  <mat-step [stepControl]="bookingForm.controls.step1">
+    <form [formGroup]="bookingForm.controls.step1">
       <ng-template matStepLabel>Выберите даты</ng-template>
-      <mat-form-field>
-        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-      </mat-form-field>
+
       <div>
-        <button mat-button matStepperNext>Next</button>
+        {{bookingForm.controls.step1.controls.dateFrom.value | json}}
+        <br>
+        {{bookingForm.controls.step1.controls.dateTo.value | json}}
+        <app-date-range class="mb-2"
+                        (dateRange)="setDateRange($event)"></app-date-range>
+        
+        <button mat-stroked-button color="primary" matStepperNext [disabled]="bookingForm.controls.step1.invalid">Далее</button>
       </div>
     </form>
   </mat-step>
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Fill out your address</ng-template>
+      <ng-template matStepLabel>Выберите номер</ng-template>
       <mat-form-field>
         <input matInput placeholder="Address" formControlName="secondCtrl" required>
       </mat-form-field>
@@ -54,7 +31,7 @@
     You are now done.
     <div>
       <button mat-button matStepperPrevious>Back</button>
-      <button mat-button (click)="stepper.reset()">Reset</button>
+      <!-- <button mat-button (click)="stepper.reset()">Reset</button> -->
     </div>
   </mat-step>
 </mat-vertical-stepper>
