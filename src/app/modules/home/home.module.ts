@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { DateRangeComponent } from './date-range/date-range.component';
 import { RoomPickerComponent } from './room-picker/room-picker.component';
+import { RoomCardComponent } from './room-picker/room-card/room-card.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { RoomPickerComponent } from './room-picker/room-picker.component';
     ReactiveFormsModule,
     NgbModule,
   ],
-  declarations: [HomeComponent, BookingStepperComponent, DateRangeComponent, RoomPickerComponent]
+  declarations: [HomeComponent, BookingStepperComponent, DateRangeComponent, RoomPickerComponent, RoomCardComponent]
 })
 export class HomeModule { }

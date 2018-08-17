@@ -20,7 +20,6 @@ export class BookingStepperComponent implements OnInit {
   constructor(
     private _formBuilder: FormBuilder,
     private _fb: FormBuilder,
-    private _roomService: RoomService
   ) {
     this.bookingForm = _fb.group({
       step1: _fb.group({
@@ -37,10 +36,6 @@ export class BookingStepperComponent implements OnInit {
     });
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
-    });
-
-    this._roomService.getAllRooms().subscribe(res => {
-      console.log(res);
     });
   }
 

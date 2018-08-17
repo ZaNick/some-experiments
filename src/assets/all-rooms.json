@@ -5,27 +5,27 @@
     "price": 5000,
     "images": [{
         "id": 0,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 1,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 2,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 3,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 4,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 5,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       }
     ]
   },
@@ -36,23 +36,23 @@
     "price": 3000,
     "images": [{
         "id": 0,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 1,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 2,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 3,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 4,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       }
     ]
   },
@@ -63,27 +63,27 @@
     "price": 10000,
     "images": [{
         "id": 0,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 1,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 2,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 3,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 4,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 5,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       }
     ]
   },
@@ -94,31 +94,31 @@
     "price": 5000,
     "images": [{
         "id": 0,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 1,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 2,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 3,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 4,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 5,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 6,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       }
     ]
   },
@@ -129,23 +129,23 @@
     "price": 8000,
     "images": [{
         "id": 0,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 1,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 2,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 3,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 4,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       }
     ]
   },
@@ -156,23 +156,23 @@
     "price": 2000,
     "images": [{
         "id": 0,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 1,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 2,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 3,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 4,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       }
     ]
   },
@@ -183,23 +183,23 @@
     "price": 10000,
     "images": [{
         "id": 0,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 1,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 2,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 3,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       },
       {
         "id": 4,
-        "uri": "/img/room1/img1.jpg"
+        "uri": "/assets/img/room1/img1.jpg"
       }
     ]
   }

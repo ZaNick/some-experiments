@@ -1,0 +1,29 @@
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-room-card',
+  templateUrl: './room-card.component.html',
+  styleUrls: ['./room-card.component.css']
+})
+export class RoomCardComponent implements OnInit {
+  @Input() room = {};
+  @Output() emitRoom = new EventEmitter<any>();
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  onRoomSelect(roomId) {
+    this.emitRoom.emit(roomId);
+  }
+
+  swipeLeft() {
+    console.log('swipe left');
+  }
+
+  swipeRight() {
+    console.log('swipe right');
+  }
+
+}

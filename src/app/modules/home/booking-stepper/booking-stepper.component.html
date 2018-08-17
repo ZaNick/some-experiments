@@ -17,6 +17,9 @@
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Выберите номер</ng-template>
+      
+      <app-room-picker></app-room-picker>
+      
       <mat-form-field>
         <input matInput placeholder="Address" formControlName="secondCtrl" required>
       </mat-form-field>
