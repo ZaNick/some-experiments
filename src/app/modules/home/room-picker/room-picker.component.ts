@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { RoomService } from '../../../services/room.service';
 
 @Component({
@@ -7,8 +7,9 @@ import { RoomService } from '../../../services/room.service';
   styleUrls: ['./room-picker.component.css']
 })
 export class RoomPickerComponent implements OnInit {
+  @Output() roomSelect = new EventEmitter<any>();
   rooms = [];
-  selectedRoom: number;
+
   constructor(private _roomService: RoomService) { }
 
   ngOnInit() {
@@ -17,8 +18,8 @@ export class RoomPickerComponent implements OnInit {
     });
   }
 
-  roomSelect(roomId) {
-    this.selectedRoom = roomId;
+  onRoomSelect(roomId) {
+    this.roomSelect.emit(roomId);
   }
 
 }

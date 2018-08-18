@@ -3,32 +3,38 @@
     <form [formGroup]="bookingForm.controls.step1">
       <ng-template matStepLabel>Выберите даты</ng-template>
 
-      <div>
-        {{bookingForm.controls.step1.controls.dateFrom.value | json}}
-        <br>
-        {{bookingForm.controls.step1.controls.dateTo.value | json}}
-        <app-date-range class="mb-2"
-                        (dateRange)="setDateRange($event)"></app-date-range>
-        
-        <button mat-stroked-button color="primary" matStepperNext [disabled]="bookingForm.controls.step1.invalid">Далее</button>
-      </div>
+      <app-date-range class="mb-2"
+                      (dateRange)="setDateRange($event)"></app-date-range>
+      
+      <button mat-stroked-button color="primary" matStepperNext [disabled]="bookingForm.controls.step1.invalid">Далее</button>
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup">
-    <form [formGroup]="secondFormGroup">
+  <mat-step [stepControl]="bookingForm.controls.step2">
+    <form [formGroup]="bookingForm.controls.step2">
       <ng-template matStepLabel>Выберите номер</ng-template>
       
-      <app-room-picker></app-room-picker>
-      
-      <mat-form-field>
-        <input matInput placeholder="Address" formControlName="secondCtrl" required>
-      </mat-form-field>
-      <div>
-        <button mat-button matStepperPrevious>Back</button>
-        <button mat-button matStepperNext>Next</button>
-      </div>
+      <app-room-picker (roomSelect)="roomSelect($event)"></app-room-picker>
+
     </form>
   </mat-step>
+
+  <mat-step [stepControl]="bookingForm.controls.step3">
+    <form [formGroup]="bookingForm.controls.step3">
+      <ng-template matStepLabel>Контактные данные</ng-template>
+      <mat-form-field class="w-100">
+        <input matInput placeholder="Имя и фамилия" formControlName="name" autocomplete="off">
+      </mat-form-field>
+
+      <mat-form-field class="w-100">
+        <input matInput placeholder="Телефон" formControlName="phone" type='text' prefix="+7 " mask="(000) 000 00 00">
+      </mat-form-field>
+    
+      <mat-form-field class="w-100">
+        <textarea matInput placeholder="Комментарий/пожелание" formControlName="comment"></textarea>
+      </mat-form-field>
+    </form>
+  </mat-step>
+
   <mat-step>
     <ng-template matStepLabel>Done</ng-template>
     You are now done.

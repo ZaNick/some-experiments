@@ -1,0 +1,17 @@
+<div class="img-wrap"
+     (swiperight)="swipeRight()"
+     (swipeleft)="swipeLeft()">
+
+    <!-- !!!изображения обязательно должны быть 16*9!!! -->
+    <img [ngClass]="{'transpar': isHiddenImg}"
+         [src]="imgArr[currentSlide].uri"
+         class="img-fluid"
+         alt=""
+         [@animationTrigger]="animationState"
+         (@animationTrigger.done)="resetAnimation(animationState)"
+         (load)="showImg()">
+    <div class="spinner"
+         *ngIf="isHiddenImg">
+        <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+    </div>
+</div>

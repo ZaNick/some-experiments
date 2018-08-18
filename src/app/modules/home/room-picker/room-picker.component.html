@@ -1,3 +1,5 @@
-<h1>{{selectedRoom}}</h1>
-<app-room-card *ngFor="let room of rooms; let i=index" [room]="room" (emitRoom)="roomSelect($event)" ngDefaultControl>
+<app-room-card *ngFor="let room of rooms; let i=index"
+               [room]="room"
+               (emitRoom)="onRoomSelect($event)"
+               ngDefaultControl>
 </app-room-card>

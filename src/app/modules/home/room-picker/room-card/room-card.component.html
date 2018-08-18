@@ -1,23 +1,18 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <mat-card-title>
-      <mat-radio-button class="example-radio-button" [value]="room.id" (change)="onRoomSelect(room.id)">
-        {{room.room_name}}
-      </mat-radio-button>
-    </mat-card-title>
+    <mat-card-title><b>{{room.room_name | uppercase}}</b></mat-card-title>
     <mat-card-subtitle>{{room.price | currency:'&#8381;':'symbol':'2.0-2' }} за сутки</mat-card-subtitle>
   </mat-card-header>
 
-  <img mat-card-image
-       [src]="room.images[0].uri"
-       alt="{{room.room_name}}"
-       (swiperight)="swipeRight()"
-       (swipeleft)="swipeLeft()">
+  <app-img-slider [imgArr]="room.images"></app-img-slider>
 
   <mat-card-content>
     <p>{{room.room_description}}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>Далее</button>
+    <button mat-stroked-button
+            class="w-100"
+            color="primary"
+            (click)="onRoomSelect(room.id)">Забронировать эту комнату</button>
   </mat-card-actions>
 </mat-card>

@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './modules/shared/material.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RoomService } from './services/room.service';
+import { NgxMaskModule } from 'ngx-mask';
 import localeRu from '@angular/common/locales/ru';
 
 registerLocaleData(localeRu, 'ru');
@@ -24,6 +25,7 @@ registerLocaleData(localeRu, 'ru');
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxMaskModule.forRoot(),
     NgbModule.forRoot(),
   ],
   providers: [

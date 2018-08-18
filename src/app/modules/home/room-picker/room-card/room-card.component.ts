@@ -18,12 +18,4 @@ export class RoomCardComponent implements OnInit {
     this.emitRoom.emit(roomId);
   }
 
-  swipeLeft() {
-    console.log('swipe left');
-  }
-
-  swipeRight() {
-    console.log('swipe right');
-  }
-
 }
