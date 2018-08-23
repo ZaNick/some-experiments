@@ -32,14 +32,27 @@
       <mat-form-field class="w-100">
         <textarea matInput placeholder="Комментарий/пожелание" formControlName="comment"></textarea>
       </mat-form-field>
+      <button mat-stroked-button color="primary" matStepperNext [disabled]="bookingForm.controls.step3.invalid">Далее</button>
     </form>
   </mat-step>
 
   <mat-step>
-    <ng-template matStepLabel>Done</ng-template>
-    You are now done.
+    <ng-template matStepLabel>Подтверждение брони</ng-template>
+    <div class="mb-3">
+      <b>Имя:</b> {{bookingForm.controls.step3.value.name}}
+    </div>
+
+    <div class="mb-3">
+      <b>Заезд:</b> {{bookingForm.controls.step1.value.dateFrom}}
+      <br>
+      <b>Выезд:</b> {{bookingForm.controls.step1.value.dateTo}}
+    </div>
+
+    <div class="mb-3">
+      <b>Цена:</b> {{totalCost | currency:'&#8381;':'symbol':'2.0-2'}}
+    </div>
     <div>
-      <button mat-button matStepperPrevious>Back</button>
+      <button mat-stroked-button color="primary" (click)="booking()" [disabled]="bookingForm.valid">Забронировать</button>
       <!-- <button mat-button (click)="stepper.reset()">Reset</button> -->
     </div>
   </mat-step>

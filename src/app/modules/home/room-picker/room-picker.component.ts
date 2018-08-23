@@ -18,8 +18,8 @@ export class RoomPickerComponent implements OnInit {
     });
   }
 
-  onRoomSelect(roomId) {
-    this.roomSelect.emit(roomId);
+  onRoomSelect(room) {
+    this.roomSelect.emit(room);
   }
 
 }

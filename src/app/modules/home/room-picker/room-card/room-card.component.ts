@@ -14,8 +14,8 @@ export class RoomCardComponent implements OnInit {
   ngOnInit() {
   }
 
-  onRoomSelect(roomId) {
-    this.emitRoom.emit(roomId);
+  onRoomSelect(room) {
+    this.emitRoom.emit(room);
   }
 
 }

@@ -45,9 +45,17 @@ export class DateRangeComponent implements OnInit {
       this.dateTo = null;
       this.dateFrom = date;
     }
+    let dayCount = 0;
+    if (this.dateFrom && this.dateTo) {
+      const from = _moment(this._formatter.format(this.dateFrom));
+      const to   = _moment(this._formatter.format(this.dateTo));
+      dayCount = _moment.duration(to.diff(from)).asDays() + 1;
+    }
+
     this.dateRange.emit({
       from: this.dateFrom ? _moment(this._formatter.format(this.dateFrom)).format(this.dateFormat) : null,
-      to: this.dateTo ? _moment(this._formatter.format(this.dateTo)).format(this.dateFormat) : null
+      to: this.dateTo ? _moment(this._formatter.format(this.dateTo)).format(this.dateFormat) : null,
+      dayCount: dayCount
     });
   }
 

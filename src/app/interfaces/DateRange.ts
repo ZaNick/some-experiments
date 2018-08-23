@@ -2,4 +2,5 @@
 interface DateRange {
   from: string | null;
   to: string | null;
+  dayCount: number;
 }

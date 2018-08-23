@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RoomService } from './services/room.service';
 import { NgxMaskModule } from 'ngx-mask';
 import localeRu from '@angular/common/locales/ru';
+import { BookingService } from './services/booking.service';
 
 registerLocaleData(localeRu, 'ru');
 
@@ -31,6 +32,7 @@ registerLocaleData(localeRu, 'ru');
   providers: [
     DatePipe,
     RoomService,
+    BookingService,
     { provide: LOCALE_ID, useValue: 'ru' }
   ],
   bootstrap: [AppComponent]
