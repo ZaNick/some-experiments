@@ -11,6 +11,7 @@ import { RoomService } from './services/room.service';
 import { NgxMaskModule } from 'ngx-mask';
 import localeRu from '@angular/common/locales/ru';
 import { BookingService } from './services/booking.service';
+import { AdminRoomService } from './services/admin-services/room.service';
 
 registerLocaleData(localeRu, 'ru');
 
@@ -32,6 +33,7 @@ registerLocaleData(localeRu, 'ru');
   providers: [
     DatePipe,
     RoomService,
+    AdminRoomService,
     BookingService,
     { provide: LOCALE_ID, useValue: 'ru' }
   ],

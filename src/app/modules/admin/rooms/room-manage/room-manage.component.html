@@ -1,0 +1,16 @@
+<h1>
+  {{isEdit ? 'Редактирование' : 'Новая комната'}}
+</h1>
+<form [formGroup]="roomForm">
+  <mat-form-field>
+    <input matInput placeholder="Заголовок" formControlName="name" autocomplete="off">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Заголовок" formControlName="description" autocomplete="off">
+  </mat-form-field>
+
+  <input type="file" (change)="onFileSelected($event)" multiple>
+
+  <button mat-raised-button color="primary" (click)="onSubmitForm()">Сохранить</button>
+</form>

@@ -1,0 +1,81 @@
+<form [formGroup]="f" class="w-100">
+  <div *ngIf="_options" formArrayName="files">
+    <div *ngIf="!!_options.limitTo" class="d-flex justify-content-start flex-wrap">
+      <div *ngFor="let item of filesArr.controls; let index = index" [formGroupName]="index"
+           [hidden]="!(_options.limitTo && _options.limitTo >= index + 1)"
+           [ngClass]="{withNumberImput: _options.numberInput}" class="e-item">
+        <img [matTooltip]="item.value.name" matTooltipPosition="above"
+             *ngIf="allowedImageType.toString().match(item.value.type)" [src]="serverUrl + item.value.link"
+             class="e-item-img h-2"/>
+        <span [matTooltip]="item.value.name" matTooltipPosition="above"
+              *ngIf="!allowedImageType.toString().match(item.value.type)" class="e-item-file"><i
+          class="fa fa-file-text-o" aria-hidden="true"></i></span>
+
+
+        <button *ngIf="_options.canRemove" (click)="onFileRemove(index)" type="button" class="e-item-remove-a">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+
+
+        <mat-form-field *ngIf="_options.numberInput" class="w-100">
+          <input formControlName="numberInput" matInput type="text" placeholder="{{'global.number'}}"
+                 required>
+        </mat-form-field>
+      </div>
+
+
+      <label *ngIf="(_options.limitTo && _options.limitTo > filesArr.controls.length)" [ngClass]="{over: isFileOver}"
+             ng2FileDrop [uploader]="uploader" (fileOver)="onFileOver($event)" class="e-drop">
+        <span class="e-drop-text">
+          <i class="fa fa-plus" aria-hidden="true"></i> <br>
+          {{'global.addPhotos'}}
+        </span>
+        <input *ngIf="_options.isMultiple" type="file" ng2FileSelect [uploader]="uploader" [accept]="allowedTypes"
+               multiple/>
+        <input *ngIf="!_options.isMultiple" type="file" ng2FileSelect [uploader]="uploader" [accept]="allowedTypes"/>
+      </label>
+    </div>
+
+
+    <div *ngIf="!_options.limitTo" class="d-flex justify-content-between flex-wrap">
+      <div *ngFor="let item of filesArr.controls; let index = index" [formGroupName]="index"
+           [hidden]="!(_options.limitTo && _options.limitTo >= index + 1)"
+           [ngClass]="{withNumberImput: _options.numberInput}" class="e-item">
+        <img [matTooltip]="item.value.name" matTooltipPosition="above"
+             *ngIf="allowedImageType.toString().match(item.value.type)" [src]="serverUrl + item.value.link"
+             class="e-item-img h-2"/>
+        <span [matTooltip]="item.value.name" matTooltipPosition="above"
+              *ngIf="!allowedImageType.toString().match(item.value.type)" class="e-item-file"><i
+          class="fa fa-file-text-o" aria-hidden="true"></i></span>
+
+
+        <button *ngIf="_options.canRemove" (click)="onFileRemove(index)" type="button" class="e-item-remove-a">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+
+
+        <mat-form-field *ngIf="_options.numberInput" class="w-100">
+          <input formControlName="numberInput" matInput type="text" placeholder="{{'global.number'}}"
+                 required>
+        </mat-form-field>
+      </div>
+
+
+      <label [ngClass]="{over: isFileOver}" ng2FileDrop [uploader]="uploader" (fileOver)="onFileOver($event)"
+             class="e-drop">
+        <span class="e-drop-text">
+          <i class="fa fa-plus" aria-hidden="true"></i> <br>
+          {{'global.addPhotos'}}
+        </span>
+        <input *ngIf="_options.isMultiple" type="file" ng2FileSelect [uploader]="uploader" [accept]="allowedTypes"
+               multiple/>
+        <input *ngIf="!_options.isMultiple" type="file" ng2FileSelect [uploader]="uploader" [accept]="allowedTypes"/>
+      </label>
+    </div>
+  </div>
+</form>
+
+
+
+
+

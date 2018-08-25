@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RoomService } from '../../../services/room.service';
 import { MatStepper } from '@angular/material';
 import { BookingService } from '../../../services/booking.service';
+import { DateRange } from '../../../interfaces/DateRange';
 // import { NgbDate } from '@ng-bootstrap/ng-bootstrap/datepicker/ngb-date';
 // import { NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 

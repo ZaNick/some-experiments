@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { NgbDate } from '@ng-bootstrap/ng-bootstrap/datepicker/ngb-date';
 import { NgbDateParserFormatter } from '@ng-bootstrap/ng-bootstrap';
 import * as _moment from 'moment';
+import { DateRange } from '../../../interfaces/DateRange';
 
 @Component({
   selector: 'app-date-range',

@@ -1,7 +1,7 @@
 [{
     "id": 0,
-    "room_name": "veniam labore pariatur",
-    "room_description": "Sit anim voluptate duis in exercitation sint Lorem sint reprehenderit ipsum.",
+    "name": "veniam labore pariatur",
+    "description": "Sit anim voluptate duis in exercitation sint Lorem sint reprehenderit ipsum.",
     "price": 5000,
     "images": [{
         "id": 0,

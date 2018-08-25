@@ -1,13 +1,13 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <mat-card-title><b>{{room.room_name | uppercase}}</b></mat-card-title>
+    <mat-card-title><b>{{room.name | uppercase}}</b></mat-card-title>
     <mat-card-subtitle>{{room.price | currency:'&#8381;':'symbol':'2.0-2' }} за сутки</mat-card-subtitle>
   </mat-card-header>
 
   <app-img-slider [imgArr]="room.images"></app-img-slider>
 
   <mat-card-content>
-    <p>{{room.room_description}}</p>
+    <p>{{room.description}}</p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-stroked-button

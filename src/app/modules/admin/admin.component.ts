@@ -9,6 +9,12 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class AdminComponent implements OnInit {
 
   options: FormGroup;
+  sections = [
+    { name: 'Комнаты', uri: 'rooms', icon: 'info' },
+    { name: 'Клиенты', uri: 'clients', icon: 'info' },
+    { name: 'Заявки на бронь', uri: 'booking', icon: 'info' },
+    { name: 'Архив', uri: 'archive', icon: 'info' },
+  ];
 
   constructor(fb: FormBuilder) {
     this.options = fb.group({
@@ -21,4 +27,11 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
+  showInfo(link) {
+    console.log(link);
+  }
+
+  clickList() {
+    console.log('clickList');
+  }
 }
