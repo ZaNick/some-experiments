@@ -1,0 +1,11 @@
+<div class="card">
+  <ul>
+    <li *ngFor="let item of loadingImgList">
+      {{item.name}} {{item.size}}
+      <img [src]="item.src" alt="">
+    </li>
+  </ul>
+  <div class="card-body">
+    <input #imgInput type="file" multiple (change)="onInputChange($event)">
+  </div>
+</div>

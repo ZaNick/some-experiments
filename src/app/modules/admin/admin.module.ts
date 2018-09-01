@@ -11,6 +11,7 @@ import { RoomManageComponent } from './rooms/room-manage/room-manage.component';
 import {DragulaModule} from 'ng2-dragula';
 import {FileUploadModule} from 'ng2-file-upload';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { ImgUploadComponent } from './img-upload/img-upload.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,6 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     DragulaModule,
     FileUploadModule,
   ],
-  declarations: [AdminComponent, RoomsComponent, RoomManageComponent, FileUploadComponent]
+  declarations: [AdminComponent, RoomsComponent, RoomManageComponent, FileUploadComponent, ImgUploadComponent]
 })
 export class AdminModule { }

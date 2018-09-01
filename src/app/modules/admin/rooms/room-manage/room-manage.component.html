@@ -7,10 +7,11 @@
   </mat-form-field>
 
   <mat-form-field>
-    <input matInput placeholder="Заголовок" formControlName="description" autocomplete="off">
+    <textarea matInput placeholder="Краткое описание" formControlName="description" autocomplete="off"></textarea>
   </mat-form-field>
 
-  <input type="file" (change)="onFileSelected($event)" multiple>
+  <app-file-upload></app-file-upload>
+  <app-img-upload></app-img-upload>
 
   <button mat-raised-button color="primary" (click)="onSubmitForm()">Сохранить</button>
 </form>
